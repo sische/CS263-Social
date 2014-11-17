@@ -21,6 +21,12 @@ public class Jersey {
     	
     }
     
+    @GET
+    @Path("/location")
+    public String getLocation() {
+    	FindLocation 
+    }
+    
     
     
 }

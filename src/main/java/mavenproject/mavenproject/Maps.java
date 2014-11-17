@@ -31,7 +31,7 @@ public class Maps extends HttpServlet {
 	@Produces(MediaType.TEXT_HTML)
 	public String returnMap(){
 		Maps currentMap = new Maps();
-		servletResponse.sendRedirect("")
+		//servletResponse.sendRedirect("");
 		return "<!DOCTYPE html>"+"<html>"+"<head>"+"<style>"+"#map_canvas"+"{width: 500px; height: 400px;} "+"</style>"
 				+ "<script src'https://maps.googleapis.com/maps/api/js'>"+"</script>"
 						+ "<script>"+"function initialize() {"+"var mapCanvas = document.getElementById('map_canvas');"
