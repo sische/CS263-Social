@@ -35,5 +35,145 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs/google-api-client-1.19.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs/google-http-client-1.19.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs/google-http-client-gson-1.19.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs/google-http-client-jackson2-1.19.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs/google-http-client-jdo-1.19.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs/google-oauth-client-1.19.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs-sources/google-api-client-appengine-1.19.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs-sources/google-api-client-servlet-1.19.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs-sources/google-http-client-appengine-1.19.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs-sources/google-oauth-client-appengine-1.19.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs-sources/google-oauth-client-servlet-1.19.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs-sources/transaction-api-1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/google-api-services-mapsengine-v1-rev56-1.19.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/google-api-services-mapsengine-v1-rev56-1.19.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/mapsengine/google-api-services-mapsengine-v1-rev56-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/sindreschei/Downloads/mapsengine/libs/google-api-client-gson-1.19.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/commons-logging-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-android-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-appengine-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-gson-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-jackson2-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-java6-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-protobuf-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-servlet-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-client-xml-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-services-plus-v1-rev104-1.17.0-rc-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-services-plus-v1-rev104-1.17.0-rc-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-api-services-plus-v1-rev104-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-android-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-appengine-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-gson-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-jackson-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-jackson2-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-jdo-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-protobuf-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-http-client-xml-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-oauth-client-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-oauth-client-appengine-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-oauth-client-java6-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-oauth-client-jetty-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/google-oauth-client-servlet-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/gson-2.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/gson-2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/guava-jdk5-13.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/guava-jdk5-13.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/httpclient-4.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/httpclient-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/httpcore-4.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/httpcore-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jackson-core-2.0.5-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jackson-core-2.0.5.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jackson-core-2.1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jackson-core-asl-1.9.9-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jackson-core-asl-1.9.9.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jackson-core-asl-1.9.11.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jdo2-api-2.3-eb-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jdo2-api-2.3-eb.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jetty-6.1.26-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jetty-6.1.26.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jetty-util-6.1.26-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jetty-util-6.1.26.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jetty-webapp-7.3.0.v20110203.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/protobuf-java-2.4.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/servlet-api-3.0.pre4.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/transaction-api-1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/transaction-api-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/xpp3-1.1.4c-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Documents/CS263/Google JARs/xpp3-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/google-gson-2.2.4/gson-2.2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/google-gson-2.2.4/gson-2.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/google-gson-2.2.4/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/commons-logging-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-android-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-appengine-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-gson-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-jackson2-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-java6-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-protobuf-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-servlet-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-client-xml-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-services-plus-v1-rev104-1.17.0-rc-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-services-plus-v1-rev104-1.17.0-rc-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-api-services-plus-v1-rev104-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-android-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-appengine-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-gson-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-jackson-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-jackson2-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-jdo-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-protobuf-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-http-client-xml-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-oauth-client-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-oauth-client-appengine-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-oauth-client-java6-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-oauth-client-jetty-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/google-oauth-client-servlet-1.17.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/gson-2.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/gson-2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/guava-jdk5-13.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/guava-jdk5-13.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/httpclient-4.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/httpclient-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/httpcore-4.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/httpcore-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jackson-core-2.0.5-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jackson-core-2.0.5.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jackson-core-2.1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jackson-core-asl-1.9.9-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jackson-core-asl-1.9.9.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jackson-core-asl-1.9.11.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jdo2-api-2.3-eb-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jdo2-api-2.3-eb.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jetty-6.1.26-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jetty-6.1.26.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jetty-util-6.1.26-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jetty-util-6.1.26.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jetty-webapp-7.3.0.v20110203.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/protobuf-java-2.4.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/servlet-api-3.0.pre4.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/transaction-api-1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/transaction-api-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/xpp3-1.1.4c-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/sindreschei/Downloads/gplus-quickstart-java-master/lib/xpp3-1.1.4c.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

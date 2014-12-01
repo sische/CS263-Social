@@ -1,57 +1,73 @@
-package mavenproject.mavenproject;
-
-//import com.google.gwt.core.client.EntryPoint;
-//import com.google.gwt.dom.client.Style.Unit;
-//import com.google.gwt.maps.client.InfoWindowContent;
-//import com.google.gwt.maps.client.MapWidget;
-//import com.google.gwt.maps.client.Maps;
-//import com.google.gwt.maps.client.control.LargeMapControl;
-//import com.google.gwt.maps.client.geom.LatLng;
-//import com.google.gwt.maps.client.overlay.Marker;
-//import com.google.gwt.user.client.ui.DockLayoutPanel;
-//import com.google.gwt.user.client.ui.RootLayoutPanel;
-
-/*
- * Entry point classes define <code>onModuleLoad()</code>.
- */
-public class SimpleMaps{// implements EntryPoint {
-
-//  // GWT module entry point method.
-//  public void onModuleLoad() {
-//   /*
-//    * Asynchronously loads the Maps API.
-//    *
-//    * The first parameter should be a valid Maps API Key to deploy this
-//    * application on a public server, but a blank key will work for an
-//    * application served from localhost.
-//   */
-//   Maps.loadMapsApi("", "2", false, new Runnable() {
-//      public void run() {
-//        buildUi();
-//      }
-//    });
-//  }
+//package mavenproject.mavenproject;
 //
-//  private void buildUi() {
-//    // Open a map centered on Cawker City, KS USA
-//    LatLng cawkerCity = LatLng.newInstance(39.509, -98.434);
+//import com.google.api.client.http.HttpTransport;
+//import com.google.api.client.http.javanet.NetHttpTransport;
+//import com.google.api.client.json.JsonFactory;
+//import com.google.api.client.json.gson.*; // error: package com.google.api.client.json.gson does not exist
+//import com.google.api.services.mapsengine.MapsEngine;
+//import com.google.api.services.mapsengine.MapsEngineRequestInitializer;
+//import com.google.api.services.mapsengine.model.Feature;
+//import com.google.api.services.mapsengine.model.FeaturesListResponse;
+////import com.google.api.services.mapsengine.model.GeoJsonPoint;
 //
-//    final MapWidget map = new MapWidget(cawkerCity, 2);
-//    map.setSize("100%", "100%");
-//    // Add some controls for the zoom level
-//    map.addControl(new LargeMapControl());
+//import java.io.IOException;
 //
-//    // Add a marker
-//    map.addOverlay(new Marker(cawkerCity));
+//public class SimpleMaps{
+//	
+//	static final String SAMPLE_TABLE_ID = "12421761926155747447-06672618218968397709";
+//	static final String PUBLIC_API_KEY = "AIzaSyDM8IqQfbOa1WBVGgn0lF27nSi3_5aIJ0g";
 //
-//    // Add an info window to highlight a point of interest
-//    map.getInfoWindow().open(map.getCenter(),
-//        new InfoWindowContent("World's Largest Ball of Sisal Twine"));
+//	public static void main(String[] args) throws Exception {
+//	  HttpTransport transport = new NetHttpTransport();
+//	  JsonFactory jsonFactory = new GsonFactory();
+//	
+//	  // This request initializer will ensure the API key is sent with every HTTP request.
+//	  MapsEngineRequestInitializer apiKeyInitializer =
+//	      new MapsEngineRequestInitializer(PUBLIC_API_KEY);
+//	
+//	  MapsEngine engine = new MapsEngine.Builder(transport, jsonFactory, null)
+//	      .setMapsEngineRequestInitializer(apiKeyInitializer)
+//	      .setApplicationName("Google-MapsEngineSample/1.0")
+//	      .build();
+//	
+//	  readFeaturesFromTable(engine);
+//	}
+//	
+//	public static String returnCoordinatesTest(){
+//		 return ("The coordinates for this user is: XX.XX.XX");
+//	}
+//	
+//	public static void readFeaturesFromTable(MapsEngine me) throws IOException {
+//	  // Query the table for offices in WA that are within 100km of Perth.
+//	  FeaturesListResponse featResp =  me.tables().features().list(SAMPLE_TABLE_ID)
+//	      .setVersion("published")
+//	      .setWhere("State='WA' AND ST_DISTANCE(geometry,ST_POINT(115.8589,-31.9522)) < 100000")
+//	      .execute();
+//	
+//	  for (Feature feat : featResp.getFeatures()) {
+//	    System.out.println(
+//	        "Properties: " + feat.getProperties().toString() + "\n\t" +
+//	        "Name: " + feat.getProperties().get("Fcilty_nam") + "\n\t" +
+//	        "Geometry Type: " + feat.getGeometry().getType());
+//	    
+//	    if (true){
+//	    	//SimpleMaps sm = new SimpleMaps();
+//	    	returnCoordinatesTest();
+//	    }
+//	  }
+//	
+////	    if (feat.getGeometry() instanceof GeoJsonPoint)  {
+////	      GeoJsonPoint point = (GeoJsonPoint) feat.getGeometry();
+////	      System.out.println("\t" +
+////	          "Longitude: " + point.getCoordinates().get(0) + ", " +
+////	          "Latitude: " +  point.getCoordinates().get(1));
+////	    } else {
+////	      System.out.println("Only points are expected in this table!");
+////	      return;
+////	    }
+////	  }
+//	
+//	 }
+//}
 //
-//    final DockLayoutPanel dock = new DockLayoutPanel(Unit.PX);
-//    dock.addNorth(map, 500);
 //
-//    // Add the map to the HTML host page
-//    RootLayoutPanel.get().add(dock);
-//  }
-}
