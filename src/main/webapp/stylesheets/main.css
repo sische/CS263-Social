@@ -1,0 +1,150 @@
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #EFEFEF;
+    margin:0;
+	padding:0;
+	height:100%;
+}
+
+html,
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}  
+#header {
+	padding:10px;
+	background:#5ee;
+}
+#content {
+	padding:10px;
+	padding-bottom:80px;  
+}
+#footer {
+	width:100%;
+	height:80px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:#ee5;
+}
+
+#copyright-bar {
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	color: #5a5a5a;
+	font-size: 11px;
+	padding: 14px 10px;
+	background-color: #101010;
+} 
+
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.company-name {
+  background-color: #efefef;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image:url('FirstPhoto1.jpg');
+  height: 550px; 
+}
+
+.company-name .container {
+  position: relative;
+  top:100px;
+}
+
+.company-name h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.company-name p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.neighborhood-guides{
+    background-color: #efefef;
+    border-bottom: 1px solid #dbdbdb; 
+}
+
+.neighborhood-guides h2{
+    color: #393c3d;
+    font-size: 24px;
+}
+
+.neighborhood-guides p{
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+
+.kontakt{
+    /* background-color: #efefef; */
+    border-bottom: 1px solid #dbdbdb; 
+}
+
+.kontakt h2{
+    color: #393c3d;
+    font-size: 24px;
+}
+
+.kontakt p{
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.kontakt h1 {
+	color: #393c3d;
+}
+
+.kontakt h4 {
+	color: #393c3d;
+}
+
+.panel {
+	color: #5a5a5a;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #efefef;
+	background-position: center;
+}
+
+.developer {
+	font-size: 9px;
+	color: #5a5a5a;
+	display: inline;
+}
+
+.bottomText {
+	color: #FFFFFF;
+}

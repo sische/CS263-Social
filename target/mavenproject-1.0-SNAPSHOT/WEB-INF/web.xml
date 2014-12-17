@@ -28,14 +28,108 @@
     </init-param>
     <load-on-startup>1</load-on-startup>
 </servlet>
+<servlet>
+    <servlet-name>SigninExample</servlet-name>
+    <servlet-class>mavenproject.model.SigninExample</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>SignedIn</servlet-name>
+    <servlet-class>mavenproject.model.SignedIn</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>CreateEvent</servlet-name>
+    <servlet-class>mavenproject.model.CreateEvent</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Geojson</servlet-name>
+    <servlet-class>mavenproject.mavenproject.Geojson</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>mavenproject.mavenproject.HelloWorld</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Activity</servlet-name>
+    <servlet-class>mavenproject.model.Activity</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Checkbox</servlet-name>
+    <servlet-class>mavenproject.model.Checkbox</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>mavenproject.model.Welcome</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Upload</servlet-name>
+    <servlet-class>mavenproject.upload.Upload</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Serve</servlet-name>
+    <servlet-class>mavenproject.upload.Serve</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>DatabaseServlet</servlet-name>
+      <servlet-class>mavenproject.datastore.DatabaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Database</servlet-name>
+    <servlet-class>mavenproject.datastore.Database</servlet-class>
+  </servlet>
 
+  
 <servlet-mapping>
     <servlet-name>Jersey Web Application</servlet-name>
     <url-pattern>/context/*</url-pattern>
 </servlet-mapping>
-<!--  <servlet-mapping>
-    <servlet-name>MyServlet</servlet-name>
-    <url-pattern>/context/*</url-pattern>
-</servlet-mapping> -->
+<servlet-mapping>
+    <servlet-name>SigninExample</servlet-name>
+    <url-pattern>/datastore</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>SignedIn</servlet-name>
+    <url-pattern>/signedin</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>CreateEvent</servlet-name>
+    <url-pattern>/createEvent</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/helloworld</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Geojson</servlet-name>
+    <url-pattern>/geojson/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Activity</servlet-name>
+    <url-pattern>/activity</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Checkbox</servlet-name>
+    <url-pattern>/checkbox</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Upload</servlet-name>
+    <url-pattern>/upload</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Serve</servlet-name>
+    <url-pattern>/serve</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Database</servlet-name>
+    <url-pattern>/database</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>DatabaseServlet</servlet-name>
+    <url-pattern>/databaseServlet</url-pattern>
+</servlet-mapping>
+   
    
 </web-app>
