@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Position</title>
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
         bottom: 50px;
       }
     </style>
-    <div class="col-md-6">
+    <div class="col-md-2">
     </div>
     <div class="col-md-6">
 
@@ -41,7 +41,7 @@ function initialize() {
       var infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        content: 'Your current location'
+        content: 'Current location'
       });
 
       //document.write(currPos)
@@ -82,22 +82,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="Futura.html">Social</a>
+            <a class="navbar-brand" href="/geojson">Social</a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+              <li><a href="welcome">Sign in</a><li>
               <li><a href="/geojson">Home</a></li>
               <li class="active"><a href="geojson">Find position</a><li>
               <li><a href="createEvent">Create event</a><li>
-              <li><a href="http://www.vg.no">Log out</a><li>
-            
-            </ul>
+          </ul>
           </div>
         </div>
       </nav>
     <div id="map-canvas"></div>
   </div>
+</div>
     <div class="col-md-3">
+      <br><br><br><br><br><br>
     </div>
   </body>
 </html>

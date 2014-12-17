@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
-    <application>mavenproject</application>
+    <application>keen-button-795</application>
     <version>1</version>
     <threadsafe>true</threadsafe>
 
     <system-properties>
         <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
     </system-properties>
-</appengine-web-app>
+    
+    
+   	<!-- <datastore-indexes>
+    	<datastore-index kind="Greeting" ancestor="true" source="manual">
+       		<property name="date" direction="desc"/>
+    	</datastore-index>
+	</datastore-indexes> 
+-->
+</appengine-web-app> 

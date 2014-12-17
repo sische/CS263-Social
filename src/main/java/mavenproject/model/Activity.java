@@ -12,10 +12,6 @@ import com.google.appengine.repackaged.org.joda.time.DateTime;
 
 public class Activity extends HttpServlet {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private String place;
 	private String description;
 	private DateTime time;

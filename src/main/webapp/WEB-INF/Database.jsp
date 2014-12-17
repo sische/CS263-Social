@@ -19,8 +19,7 @@
 <head>
     <title>Database</title>
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <!--<link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
 </head>
 
 <body>
@@ -31,26 +30,25 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="Futura.html">Social</a>
+            <a class="navbar-brand" href="/geojson">Social</a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+              <li><a href="welcome">Sign in</a><li>
               <li class="active"><a href="/geojson">Home</a></li>
               <li><a href="geojson">Find position</a><li>
               <li><a href="createEvent">Create event</a><li>
-              <li><a href="http://www.vg.no">Log out</a><li>
-            
             </ul>
           </div>
         </div>
       </nav>
       <br><br>
 <%
-    String guestbookName = request.getParameter("guestbookName");
-    if (guestbookName == null) {
-        guestbookName = "guestbookDatabase";
+    String databaseName = request.getParameter("databaseName");
+    if (databaseName == null) {
+        databaseName = "socialDatabase";
     }
-    pageContext.setAttribute("guestbookName", guestbookName);
+    pageContext.setAttribute("databaseName", databaseName);
     UserService userService = UserServiceFactory.getUserService();
     User user = userService.getCurrentUser();
     if (user != null) {
@@ -63,35 +61,31 @@
 } else {
 %>
 <p>Hello!
-    <a href="<%= userService.createLoginURL(request.getRequestURI()) %>">Sign in</a>
-    to include your name with greetings you post.</p>
+    <!--<a href="<%= userService.createLoginURL(request.getRequestURI()) %>">Sign in</a>
+    to include your name with greetings you post.</p>-->
 <%
     }
 %>
 
 <%
     DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-    Key guestbookKey = KeyFactory.createKey("Guestbook", guestbookName);
+    Key databaseKey = KeyFactory.createKey("Database", databaseName);
     Key cancel = KeyFactory.createKey("Cancel", "Cancel");
     // Run an ancestor query to ensure we see the most up-to-date
     // view of the Greetings belonging to the selected Guestbook.
-    Query query = new Query("Greeting", guestbookKey).addSort("date", Query.SortDirection.DESCENDING);
+    Query query = new Query("Greeting", databaseKey).addSort("date", Query.SortDirection.DESCENDING);
     List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(5));
     if (greetings.isEmpty()) {
 %>
-<p>The database '${fn:escapeXml(guestbookName)}' has no entries.</p>
+<p>The database '${fn:escapeXml(databaseName)}' has no entries.</p>
 <%
 } else {
 %>
-<p>Entries in database '${fn:escapeXml(guestbookName)}'.</p>
+<p>Entries in database '${fn:escapeXml(databaseName)}'.</p>
 <%
     for (Entity greeting : greetings) {
         pageContext.setAttribute("greeting_content",
                 greeting.getProperty("content"));
-        pageContext.setAttribute("greeting_content",
-                greeting.getProperty("name"));
-        pageContext.setAttribute("greeting_content",
-                greeting.getProperty("description"));
  //       pageContext.setAttribute("greeting_content2", 
   //              greeting.getProperty("description")); 
   //      pageContext.setAttribute("greeting_content3", 
@@ -117,16 +111,12 @@
 <form action="/databaseServlet" method="post">
     <!--<div><textarea name="content" rows="3" cols="60"></textarea></div> -->
     <div><input type="submit" value="Post Greeting"/></div>
-    <input type="hidden" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/>
+    <input type="hidden" name="databaseName" value="${fn:escapeXml(databaseName)}"/>
 </form>
 <form action="/geojson" method="post">
     <div><input type="submit" value="Cancel"/></div>
 </form>
-<!--
-<form action="/database" method="get">
-    <div><input type="text" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/></div>
-    <div><input type="submit" value="Switch Guestbook"/></div>
-</form> -->
+
 </div>
     </div>
     <div class="col-md-6">

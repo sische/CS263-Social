@@ -24,54 +24,30 @@ import org.geotools.styling.Style;
 import org.geotools.swing.JMapFrame;
 import org.geotools.swing.data.JFileDataStoreChooser;
 
-/**
- * Prompts the user for a shapefile and displays the contents on the screen in a map frame.
- * <p>
- * This is the GeoTools Quickstart application used in documentationa and tutorials. *
- */
+
 public class Geojson extends HttpServlet {
-	/**
-	 * @throws IOException 
-	 * @throws ServletException 
-     * 
-     * 
-     */
-	
+
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
 		resp.getWriter().println("<br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find your position!<br><br>");
-	
 		performTask(req, resp);
 	}
 	
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
 			IOException {
-		response.getWriter().println("<br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find your position!<br><br>");
-		
-		performTask(request, response);
+
 	}
 
 	private void performTask(HttpServletRequest request, HttpServletResponse response) throws ServletException,
 			IOException {
-		
 		checkParameters(request, response);
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-//		out.println("<br><br><br><tr>      TestServlet says hi<br/>");
-//		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/index.jsp");
 		String action = request.getParameter("action");
-//		String username = request.getParameter("username");
-//		System.out.println(username);
-//		if (action != null) {
-//			RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/Map1.jsp");
-			RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/MapsPos.jsp");
-//			if ("include".equalsIgnoreCase(action)) {
-				rd.include(request, response);
+
+		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/MapsPos.jsp");
+		rd.include(request, response);
 				
-//			} else if ("forward".equalsIgnoreCase(action)) {
-				rd.forward(request, response);
-//		}
-	
 	}
 	
 	public void checkParameters(HttpServletRequest request, HttpServletResponse response) throws IOException{
@@ -100,29 +76,7 @@ public class Geojson extends HttpServlet {
 			ad.getSpecificActivity(i).setAddedToDatabase(true);
 		}
 		response.getWriter().println("<br><br>These are the activities currently stored in the database: <br><br>" + display.toString());
-        // display a data store file chooser dialog for shapefiles
-//        File file = JFileDataStoreChooser.showOpenFile("shp", null);
-//        if (file == null) {
-//            return;
-//        }
 
-//        FileDataStore store = FileDataStoreFinder.getDataStore(file);
-//        SimpleFeatureSource featureSource = store.getFeatureSource();
-//
-//        // Create a map content and add our shapefile to it
-//        MapContent map = new MapContent();
-//        map.setTitle("Quickstart");
-//        
-//        Style style = SLD.createSimpleStyle(featureSource.getSchema());
-//        Layer layer = new FeatureLayer(featureSource, style);
-//        map.addLayer(layer);
-//
-//        // Now display the map
-//        JMapFrame.showMap(map);
-    }}
-		//System.out.println("doGet in Geojson");
+    }
+}
 		
-	
-	
-//    public static void main(String[] args) throws Exception {
-

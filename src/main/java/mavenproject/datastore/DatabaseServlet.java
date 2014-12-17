@@ -26,38 +26,36 @@ public class DatabaseServlet extends HttpServlet {
 		 UserService userService = UserServiceFactory.getUserService();
 		    User user = userService.getCurrentUser();
 		
-		    String guestbookName = req.getParameter("guestbookName");
-		    if (guestbookName == null){
-		    	guestbookName = "SocialDatabase";
+		    String databaseName = req.getParameter("databaseName");
+		    if (databaseName == null){
+		    	databaseName = "SocialDatabase";
 		    }
-		    Key guestbookKey = KeyFactory.createKey("Guestbook", guestbookName);
+		    
+		    Key key = KeyFactory.createKey("Database", databaseName);
 		    String content = req.getParameter("content");
 		    String name = req.getParameter("name");
-//		    int maxNum = (int) Integer.parseInt(req.getParameter(maxNum));
 		    String latitude = req.getParameter("latitude");
 		    String longditude = req.getParameter("longdetude");
 		    String description = req.getParameter("description");
 		    Date date = new Date();
-		    Entity greeting = new Entity("Greeting", guestbookKey);
-		    greeting.setProperty("user", user);
-		    greeting.setProperty("date", date);
-		    greeting.setProperty("content", content);
-		    greeting.setProperty("name", name);
-//		    greeting.setProperty("maxNum", maxNum);
-		    greeting.setProperty("latitude", latitude);
-		    greeting.setProperty("longditude", longditude);
-		    greeting.setProperty("description", description);
+		    Entity event = new Entity("Event", key);
+		    event.setProperty("user", user);
+		    event.setProperty("date", date);
+		    event.setProperty("content", content);
+		    event.setProperty("name", name);
+		    event.setProperty("latitude", latitude);
+		    event.setProperty("longditude", longditude);
+		    event.setProperty("description", description);
 		
 		    DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-		    datastore.put(greeting);
+		    datastore.put(event);
 		    
 		    RequestDispatcher rd = req.getRequestDispatcher("WEB-INF/DatabaseServlet.jsp");
 		    rd.include(req, resp);
 		    
-		    resp.getWriter().println(greeting.toString());
-		    System.out.println("Greeting-object: " + greeting.toString());
-		    
-		   // resp.sendRedirect("/database?guestbookName=" + guestbookName);
+		    //resp.getWriter().println("Current event: " + datastore.get);
+		    //resp.getWriter().println("<br>This is a test..!");
+	
 	}
   
 	@Override
@@ -70,9 +68,8 @@ public class DatabaseServlet extends HttpServlet {
 	    Key guestbookKey = KeyFactory.createKey("Guestbook", guestbookName);
 	    String content = req.getParameter("content");
 	    String name = req.getParameter("name");
-//	    int maxNum = (int) Integer.parseInt(req.getParameter(maxNum));
 	    String latitude = req.getParameter("latitude");
-	    String longditude = req.getParameter("longdetude");
+	    String longditude = req.getParameter("longditude");
 	    String description = req.getParameter("description");
 	    Date date = new Date();
 	    Entity greeting = new Entity("Greeting", guestbookKey);
@@ -80,7 +77,6 @@ public class DatabaseServlet extends HttpServlet {
 	    greeting.setProperty("date", date);
 	    greeting.setProperty("content", content);
 	    greeting.setProperty("name", name);
-//	    greeting.setProperty("maxNum", maxNum);
 	    greeting.setProperty("latitude", latitude);
 	    greeting.setProperty("longditude", longditude);
 	    greeting.setProperty("description", description);
@@ -89,8 +85,8 @@ public class DatabaseServlet extends HttpServlet {
 	    datastore.put(greeting);
 	    
 	    resp.getWriter().println(greeting.toString());
+	    resp.getWriter().println("This is a test..!");
 	    System.out.println("Greeting-object: " + greeting.getProperty(description).toString());
 	    	
-	    //resp.sendRedirect("/database?guestbookName=" + guestbookName);
   }
 }

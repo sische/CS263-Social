@@ -22,8 +22,6 @@ public class CreateEvent extends HttpServlet {
 		performTask(req, resp);
 		
 		String username = req.getParameter("username");
-		System.out.println(username);
-		
 	}
 
 	    
@@ -35,36 +33,17 @@ public class CreateEvent extends HttpServlet {
         String password = request.getParameter("password");
         
         System.out.println("Post Project   "+request.getParameter("Name"));
-//        User user = userService.find(username, password);
 
-//        if (user != null) {
-//            request.getSession().setAttribute("user", user);
-//            response.sendRedirect("home");
-//        }
-//        else {
-//            request.setAttribute("error", "Unknown user, please try again");
-//            request.getRequestDispatcher("/login.jsp").forward(request, response);
-//        }
     }
 	
 	private void performTask(HttpServletRequest request, HttpServletResponse response) throws ServletException,
 		IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		//out.println("<br><br><br><tr>      TestServlet says hi<br/>");
-		//RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/index.jsp");
 		String action = request.getParameter("action");
-//		if (action != null) {
-		//	RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/Map1.jsp");
-		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/CreateEvent.jsp");
-//		if ("include".equalsIgnoreCase(action)) {
-			rd.include(request, response);
-//		} else if ("forward".equalsIgnoreCase(action)) {
-//			rd.forward(request, response);
-//		}
 		
+		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/CreateEvent.jsp");
+		rd.include(request, response);
+
 	}
-	
-	
-	
 }
